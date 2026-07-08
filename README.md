@@ -8,7 +8,8 @@ Install docker (with post-installation) and cache outside of boot
 ```
 curl -fsSL -o install_docker.sh https://raw.githubusercontent.com/pohaoc/dotfiles/main/install_docker.sh
 chmod +x install_docker.sh
-sudo ./install_docker.sh
+sudo ./install_docker.sh              # caches to /mnt/cache/docker (default)
+sudo ./install_docker.sh --no-cache   # leaves data-root at Docker's default (/var/lib/docker)
 ```
 Resize cloudlab boot partition to use all space
 ```
